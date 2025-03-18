@@ -72,10 +72,10 @@ export const characters: CharacterData[] = [
     color: '#22C55E'
   },
   {
-    id: 'ninguem',
-    name: 'ninguem',
-    image: '',
-    modelUrl: '',
+    id: 'babuino',
+    name: 'babuinagem',
+    image: './assets/Posters/babuino.jpg',
+    modelUrl: './assets/Models/babuino.glb',
     description: 'A nimble fighter who strikes from the shadows with deadly precision.',
     stats: {
       strength: 6,
