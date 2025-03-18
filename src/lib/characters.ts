@@ -112,5 +112,19 @@ export const characters: CharacterData[] = [
       magic: 10
     },
     color: '#ccff12'
+  },
+  {
+    id: 'pablash',
+    name: 'Pablash',
+    image: './assets/Posters/pablash.jpg',
+    modelUrl: './assets/Models/pablash.glb',
+    description: 'A disciplined martial artist who harnesses inner chi for powerful techniques.',
+    stats: {
+      strength: 1,
+      speed: 3,
+      technique: 10,
+      magic: 10
+    },
+    color: '#12fff3'
   }
 ];
