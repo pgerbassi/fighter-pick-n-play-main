@@ -86,10 +86,10 @@ export const characters: CharacterData[] = [
     color: '#F97316'
   },
   {
-    id: 'ninguem',
-    name: 'ninguem',
-    image: '',
-    modelUrl: '',
+    id: 'resnatao',
+    name: 'Resnatao Max',
+    image: './assets/Posters/Resnatao.jpg',
+    modelUrl: './assets/Models/resnatao.glb',
     description: 'A disciplined martial artist who harnesses inner chi for powerful techniques.',
     stats: {
       strength: 7,
@@ -98,5 +98,19 @@ export const characters: CharacterData[] = [
       magic: 7
     },
     color: '#D946EF'
+  },
+  {
+    id: 'luir',
+    name: 'Luir Fernan',
+    image: './assets/Posters/Luir.jpg',
+    modelUrl: './assets/Models/luir.glb',
+    description: 'A disciplined martial artist who harnesses inner chi for powerful techniques.',
+    stats: {
+      strength: 1,
+      speed: 3,
+      technique: 10,
+      magic: 10
+    },
+    color: '#ccff12'
   }
 ];

@@ -98,6 +98,24 @@
 
   body {
     @apply bg-background text-foreground;
+    overscroll-behavior: none;
+  }
+  
+  /* Mobile-first approach - safe area classes for notches and home indicators */
+  .top-safe {
+    padding-top: env(safe-area-inset-top, 0.5rem);
+  }
+  
+  .bottom-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0.5rem);
+  }
+  
+  .left-safe {
+    padding-left: env(safe-area-inset-left, 0.5rem);
+  }
+  
+  .right-safe {
+    padding-right: env(safe-area-inset-right, 0.5rem);
   }
 }
 
@@ -110,13 +128,17 @@
 }
 
 @layer components {
-  /* Character card styles */
+  /* Mobile-optimized character card styles */
   .character-card {
     @apply relative overflow-hidden rounded-sm cursor-pointer transition-all duration-300;
   }
 
   .character-card:hover {
     @apply transform scale-105 shadow-xl z-10;
+  }
+  
+  .character-card:active {
+    @apply transform scale-95;
   }
 
   .character-card.selected {
@@ -189,4 +211,21 @@ body::-webkit-scrollbar {
 /* For keyboard navigation highlight */
 .focus-visible:focus {
   @apply outline-none ring-2 ring-yellow-400 ring-offset-2;
+}
+
+/* Mobile viewport optimizations */
+@supports (height: 100dvh) {
+  .h-screen, .min-h-screen {
+    height: 100dvh;
+  }
+  .min-h-screen {
+    min-height: 100dvh;
+  }
+}
+
+/* Add view transitions API for smoother navigation */
+@supports (view-transition-name: none) {
+  .character-card {
+    view-transition-name: character-card;
+  }
 }
