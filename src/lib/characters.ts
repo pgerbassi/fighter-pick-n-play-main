@@ -18,8 +18,8 @@ export const characters: CharacterData[] = [
   {
     id: 'pablo',
     name: 'Pablo Dev',
-    image: './public/assets/Posters/Pablo.jpeg',
-    modelUrl: './public/assets/Models/pablo.glb',
+    image: './assets/Posters/Pablo.jpeg',
+    modelUrl: './assets/Models/pablo.glb',
     description: 'A stealthy warrior who specializes in quick strikes and evasion.',
     stats: {
       strength: 7,
@@ -32,8 +32,8 @@ export const characters: CharacterData[] = [
   {
     id: 'anajulia',
     name: 'Ana Julia',
-    image: './public/assets/Posters/Anajulia.jpg',
-    modelUrl: './public/assets/Models/anajulia.glb',
+    image: './assets/Posters/Anajulia.jpg',
+    modelUrl: './assets/Models/anajulia.glb',
     description: 'A disciplined warrior with powerful strikes and unwavering honor.',
     stats: {
       strength: 8,
@@ -46,8 +46,8 @@ export const characters: CharacterData[] = [
   {
     id: 'pietro',
     name: 'Pietro Travadão',
-    image: './public/assets/Posters/Pietro.jpg',
-    modelUrl: './public/assets/Models/pietro.glb',
+    image: './assets/Posters/Pietro.jpg',
+    modelUrl: './assets/Models/pietro.glb',
     description: 'A master of the arcane arts with devastating magical abilities.',
     stats: {
       strength: 3,
@@ -60,8 +60,8 @@ export const characters: CharacterData[] = [
   {
     id: 'velho',
     name: 'Victor Velho',
-    image: './public/assets/Posters/Velho.jpg',
-    modelUrl: './public/assets/Models/velho.glb',
+    image: './assets/Posters/Velho.jpg',
+    modelUrl: './assets/Models/velho.glb',
     description: 'A heavily armored warrior specializing in defense and powerful weapons.',
     stats: {
       strength: 9,
